@@ -1,0 +1,77 @@
+{
+  "last_reset_date": "2025-07-02",
+  "devices": {
+    "Mikrotik Core": {
+      "cpu_sum": 250,
+      "cpu_count": 22,
+      "ram_sum": 373.97,
+      "ram_count": 22,
+      "interfaces": {
+        "ether1-WAN-LDP": {
+          "total_in": 2218654823,
+          "total_out": 156411614,
+          "up_events": 0,
+          "down_events": 0,
+          "current_status": "UP"
+        },
+        "ether3-MyRepublic": {
+          "total_in": 2463791601,
+          "total_out": 463173138,
+          "up_events": 0,
+          "down_events": 0,
+          "current_status": "UP"
+        },
+        "ether5-Indihome": {
+          "total_in": 1254994566,
+          "total_out": 718817704,
+          "up_events": 0,
+          "down_events": 0,
+          "current_status": "UP"
+        }
+      }
+    },
+    "Mikrotik LDP": {
+      "cpu_sum": 498,
+      "cpu_count": 22,
+      "ram_sum": 1434.7099999999998,
+      "ram_count": 22,
+      "interfaces": {
+        "ether1": {
+          "total_in": 2318081669,
+          "total_out": 155962517,
+          "up_events": 0,
+          "down_events": 0,
+          "current_status": "UP"
+        },
+        "ether2": {
+          "total_in": 156544780,
+          "total_out": 2332534480,
+          "up_events": 0,
+          "down_events": 0,
+          "current_status": "UP"
+        },
+        "ether3": {
+          "total_in": 0,
+          "total_out": 0,
+          "up_events": 0,
+          "down_events": 0,
+          "current_status": "DOWN"
+        },
+        "ether4": {
+          "total_in": 0,
+          "total_out": 0,
+          "up_events": 0,
+          "down_events": 0,
+          "current_status": "DOWN"
+        },
+        "ether5": {
+          "total_in": 0,
+          "total_out": 0,
+          "up_events": 0,
+          "down_events": 0,
+          "current_status": "DOWN"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Mikrotik Core",
+        "ip": "192.168.1.1",
+        "community": "co2",
+        "cpu_alert_threshold": 90,  
+        "ram_alert_threshold": 95, 
+        "interfaces": {
+            "1": "ether1-WAN-LDP",
+            "3": "ether3-MyRepublic",
+            "5": "ether5-Indihome"
+        }
+    },
+    {
+        "name": "Mikrotik LDP",
+        "ip": "192.168.10.1",
+        "community": "co2",
+        "cpu_alert_threshold": 90,  
+        "ram_alert_threshold": 95, 
+        "interfaces": {
+            "1": "ether1",
+            "2": "ether2",
+            "3": "ether3",
+            "4": "ether4",
+            "5": "ether5"
+        }
+    },
+        {
+        "name": "Mikrotik CHR",
+        "ip": "192.168.1.224",
+        "community": "public",
+        "cpu_alert_threshold": 90,  
+        "ram_alert_threshold": 95, 
+        "interfaces": {
+            "2": "ether1-ISP 1",
+            "3": "ether2-ISP 2",
+            "4": "ether3-Output",
+            "5": "ether4-Output"
+        }
+    }
+]

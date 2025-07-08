@@ -1,0 +1,3 @@
+requests
+pysnmp
+python-dotenv
