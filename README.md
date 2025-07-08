@@ -1,20 +1,24 @@
-# Monitoring & Telegram Bot for Mikrotik Devices
+# 🚦 Monitoring & 🤖 Telegram Bot for Mikrotik Devices
 
 This project provides a Python-based monitoring system for Mikrotik routers, featuring:
-- **Automated SNMP monitoring** of CPU, RAM, and interface status/traffic
-- **Daily and monthly summaries** with JSONL log storage
-- **Alerting and reporting via Telegram Bot**
-- **Manual and scheduled reporting**
+- 🛰️ **Automated SNMP monitoring** of CPU, RAM, and interface status/traffic
+- 📅 **Daily and monthly summaries** with JSONL log storage
+- 🚨 **Alerting and reporting via Telegram Bot**
+- 📤 **Manual and scheduled reporting**
 
-## Features
+---
 
-- **SNMP Monitoring**: Collects CPU, RAM, and interface (UP/DOWN, bandwidth) data from multiple Mikrotik devices.
-- **Alerting**: Sends Telegram alerts for high CPU/RAM usage and interface status changes.
-- **Daily Accumulation**: Aggregates daily stats for each device/interface.
-- **Monthly Reporting**: Generates and sends monthly summary reports via Telegram.
-- **Telegram Bot**: Responds to commands for on-demand status, daily, and monthly reports.
+## ✨ Features
 
-## Project Structure
+- 🧠 **SNMP Monitoring**: Collects CPU, RAM, and interface (UP/DOWN, bandwidth) data from multiple Mikrotik devices.
+- 🚨 **Alerting**: Sends Telegram alerts for high CPU/RAM usage and interface status changes.
+- 📊 **Daily Accumulation**: Aggregates daily stats for each device/interface.
+- 📆 **Monthly Reporting**: Generates and sends monthly summary reports via Telegram.
+- 🤖 **Telegram Bot**: Responds to commands for on-demand status, daily, and monthly reports.
+
+---
+
+## 🗂️ Project Structure
 
 ```
 monitoring.py         # Main monitoring script (daemon)
@@ -25,7 +29,9 @@ logs/                 # Daily logs (JSONL) per device/interface
 status/               # State files (accumulator, last status, etc)
 ```
 
-## Setup
+---
+
+## 🚀 Setup
 
 1. **Clone the repository** and install dependencies:
    ```powershell
@@ -66,30 +72,36 @@ status/               # State files (accumulator, last status, etc)
    python bot_handler.py
    ```
 
-## Telegram Bot Commands
+---
 
-- `/help` — Show available commands
-- `/status` — Show current UP/DOWN status of all interfaces
-- `/cpu` — Show current CPU usage
-- `/ram` or `/memory` — Show current RAM usage
-- `/bandwidth` — Show current bandwidth in/out per interface
-- `/uptime` — Show router and interface uptime
-- `/daily` — Show today's monitoring summary
-- `/report` — Show monthly summary report
+## 💬 Telegram Bot Commands
 
-## Logging & Data
+- `/help` — Show available commands ℹ️
+- `/status` — Show current UP/DOWN status of all interfaces 📶
+- `/cpu` — Show current CPU usage 🧠
+- `/ram` or `/memory` — Show current RAM usage 💾
+- `/bandwidth` — Show current bandwidth in/out per interface 📈
+- `/uptime` — Show router and interface uptime ⏱️
+- `/daily` — Show today's monitoring summary 📅
+- `/report` — Show monthly summary report 📆
 
-- **Daily logs**: Stored in `logs/<Device Name>/<YYYY-MM>/daily_summary.jsonl`
-- **State files**: In `status/` (for resuming after restart)
-- **Monthly archives**: Old logs are archived automatically after monthly report
+---
 
-## Requirements
+## 📚 Logging & Data
+
+- **Daily logs**: Stored in `logs/<Device Name>/<YYYY-MM>/daily_summary.jsonl` 📄
+- **State files**: In `status/` (for resuming after restart) 💾
+- **Monthly archives**: Old logs are archived automatically after monthly report 🗄️
+
+---
+
+## 🛠️ Requirements
 
 - Python 3.11+
 - Mikrotik devices with SNMP enabled
 - Telegram bot token and chat ID
 
-## Dependencies
+## 📦 Dependencies
 
 - requests
 - pysnmp
@@ -100,6 +112,8 @@ Install with:
 pip install -r requirements.txt
 ```
 
-## License
+---
+
+## 📄 License
 
 MIT License
