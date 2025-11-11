@@ -1,0 +1,4 @@
+python-dotenv
+pysnmp
+requests
+python-telegram-bot
